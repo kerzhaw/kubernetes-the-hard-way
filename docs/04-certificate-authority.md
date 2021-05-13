@@ -108,7 +108,7 @@ Kubernetes uses a [special-purpose authorization mode](https://kubernetes.io/doc
 Generate a certificate and private key for each Kubernetes worker node:
 
 ```
-for instance in worker-0 worker-1 worker-2; do
+for instance in worker-0 worker-1; do
 cat > ${instance}-csr.json <<EOF
 {
   "CN": "system:node:${instance}",
