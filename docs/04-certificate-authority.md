@@ -36,11 +36,9 @@ cat > ca-csr.json <<EOF
   },
   "names": [
     {
-      "C": "US",
-      "L": "Portland",
-      "O": "Kubernetes",
-      "OU": "CA",
-      "ST": "Oregon"
+      "C": "NZ",
+      "L": "Auckland",
+      "O": "Kubernetes"
     }
   ]
 }
@@ -78,11 +76,9 @@ cat > admin-csr.json <<EOF
   },
   "names": [
     {
-      "C": "US",
-      "L": "Portland",
-      "O": "system:masters",
-      "OU": "Kubernetes The Hard Way",
-      "ST": "Oregon"
+      "C": "NZ",
+      "L": "Auckland",
+      "O": "system:masters"
     }
   ]
 }
@@ -122,11 +118,9 @@ cat > ${instance}-csr.json <<EOF
   },
   "names": [
     {
-      "C": "US",
-      "L": "Portland",
-      "O": "system:nodes",
-      "OU": "Kubernetes The Hard Way",
-      "ST": "Oregon"
+      "C": "NZ",
+      "L": "Auckland",
+      "O": "system:nodes"
     }
   ]
 }
@@ -175,11 +169,9 @@ cat > kube-controller-manager-csr.json <<EOF
   },
   "names": [
     {
-      "C": "US",
-      "L": "Portland",
-      "O": "system:kube-controller-manager",
-      "OU": "Kubernetes The Hard Way",
-      "ST": "Oregon"
+      "C": "NZ",
+      "L": "Auckland",
+      "O": "system:kube-controller-manager"
     }
   ]
 }
@@ -219,11 +211,9 @@ cat > kube-proxy-csr.json <<EOF
   },
   "names": [
     {
-      "C": "US",
-      "L": "Portland",
-      "O": "system:node-proxier",
-      "OU": "Kubernetes The Hard Way",
-      "ST": "Oregon"
+      "C": "NZ",
+      "L": "Auckland",
+      "O": "system:node-proxier"
     }
   ]
 }
@@ -262,11 +252,9 @@ cat > kube-scheduler-csr.json <<EOF
   },
   "names": [
     {
-      "C": "US",
-      "L": "Portland",
-      "O": "system:kube-scheduler",
-      "OU": "Kubernetes The Hard Way",
-      "ST": "Oregon"
+      "C": "NZ",
+      "L": "Auckland",
+      "O": "system:kube-scheduler"
     }
   ]
 }
@@ -314,11 +302,9 @@ cat > kubernetes-csr.json <<EOF
   },
   "names": [
     {
-      "C": "US",
-      "L": "Portland",
-      "O": "Kubernetes",
-      "OU": "Kubernetes The Hard Way",
-      "ST": "Oregon"
+      "C": "NZ",
+      "L": "Auckland",
+      "O": "Kubernetes"
     }
   ]
 }
@@ -362,11 +348,9 @@ cat > service-account-csr.json <<EOF
   },
   "names": [
     {
-      "C": "US",
-      "L": "Portland",
-      "O": "Kubernetes",
-      "OU": "Kubernetes The Hard Way",
-      "ST": "Oregon"
+      "C": "NZ",
+      "L": "Auckland",
+      "O": "Kubernetes"
     }
   ]
 }
