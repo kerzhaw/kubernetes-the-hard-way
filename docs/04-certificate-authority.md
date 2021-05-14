@@ -128,8 +128,7 @@ EOF
 
 EXTERNAL_IP=$(openstack floating ip list -c 'Floating IP Address' -f value)
 
-INTERNAL_IP=$(gcloud compute instances describe ${instance} \
-  --format 'value(networkInterfaces[0].networkIP)')
+INTERNAL_IP=$(openstack server show -c addresses -f yaml jump-box | sed '1,2d;4d' | grep -Po '\d+\.\d+\.\d+\.\d+')
 
 cfssl gencert \
   -ca=ca.pem \
