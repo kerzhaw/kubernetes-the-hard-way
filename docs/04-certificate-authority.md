@@ -126,8 +126,7 @@ cat > ${instance}-csr.json <<EOF
 }
 EOF
 
-EXTERNAL_IP=$(gcloud compute instances describe ${instance} \
-  --format 'value(networkInterfaces[0].accessConfigs[0].natIP)')
+EXTERNAL_IP=$(openstack floating ip list -c 'Floating IP Address' -f value)
 
 INTERNAL_IP=$(gcloud compute instances describe ${instance} \
   --format 'value(networkInterfaces[0].networkIP)')
